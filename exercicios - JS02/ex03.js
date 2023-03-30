@@ -3,8 +3,8 @@
 const drawnNumber = Math.floor(Math.random() * (10 - 1) +1); // Criando um número aleatório de 0 a 10 (número do sorteio)
 const winnerNumber = Math.floor(Math.random() * (10 - 1) +1); // Criando um número aleatório de 0 a 10 (número do ganhador)
 
-console.log (drawnNumber, "winnerNumber") // Verificar quais os números estão sendo gerados no sorteio
-console.log(winnerNumber, "drawnNumber") // Verificar quais os números estão sendo gerados do ganhador
+console.log (drawnNumber, "drawnNumber") // Verificar quais os números estão sendo gerados no sorteio
+console.log(winnerNumber, "winnerNumber") // Verificar quais os números estão sendo gerados do ganhador
 
 if(drawnNumber === winnerNumber){ // Se o número aleatório for igual ao número vencedor, Ganhei
     console.log('Você GANHOU')
