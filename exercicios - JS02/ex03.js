@@ -10,5 +10,5 @@ if(drawnNumber === winnerNumber){ // Se o número aleatório for igual ao númer
     console.log('Você GANHOU')
 }
 else { // Caso o número não seja igual ao número do vencedor, Perdeu
-    console.log('Não houve GANHADOR')
+    console.log('Você PERDEU')
 }

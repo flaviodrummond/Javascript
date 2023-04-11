@@ -1,5 +1,8 @@
 /* Operadores Typeof e Delete */
 
+/* Typeof - dá o poder de saber qual é o tipo daquela variável.
+Delete -  coloco apenas o que eu quero deletar dentro do meu objeto */
+
 const myNumber = 15
 const myString = "Olá Mundo"
 const myObject = {

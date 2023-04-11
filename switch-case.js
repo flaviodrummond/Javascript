@@ -1,5 +1,7 @@
 /* Controle de Fluxo - Condicionais - Switch Case */
 
+/* Posso ter diversas cases dentro do meu switch com os valores diferentes, mas só entra na case que for do mesmo valor. Caso, tenha um valor que não apareça em nenhuma case, posso criar uma case de default, pois assim toda vez que passar pelas cases e não encontrar o valor, ele entra na case default */
+
 const temperature = 39
 
 switch (temperature) {

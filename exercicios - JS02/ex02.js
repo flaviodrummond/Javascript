@@ -2,8 +2,6 @@
 
 const person = { // Criamos um objeto "person", com as seguintes descrições do objeto
     Name: 'Brunella',
-    Age: 21,
-    Genery: 'Female',
     Nationality: 'Italiana'
 }
 

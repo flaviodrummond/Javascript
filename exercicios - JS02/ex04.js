@@ -27,18 +27,18 @@ if(numberTree < numberOne && numberTree < numberTwo){ // Vamos verificar se o te
 /* Também existe uma forma diferente de se resolver este desafio */
 
 const oneNumber = 501
-const twoNumber = 47
+const twoNumber = 4
 const treeNumber = 8
 
-if(oneNumber > twoNumber && oneNumber > treeNumber){
+if(oneNumber > twoNumber && oneNumber > treeNumber){ // Vamos verificar se o primeiro número é maior (>) que o segundo, e (&&), se o primeiro é maior (>) que o terceiro
     console.log('O primeiro é Maior')
-} else if (twoNumber > treeNumber) {
+} else if (twoNumber > treeNumber) { // Vamos verificar se o segundo é maior (>) que o terceiro
     console.log('O segundo é Maior')
 } else {
-    console.log('O terceiro é Maior')
+    console.log('O terceiro é Maior') // Se nem o primeiro e nem o segundo for maior (>) que o terceiro, então o terceiro será maior (>)
 }
 
-if(oneNumber < twoNumber && oneNumber < treeNumber){
+if(oneNumber < twoNumber && oneNumber < treeNumber){ // Segue o mesmo padrão da resolução de cima, mas inventendo os sinais para sabem quem é o menor (>)
     console.log('O primeiro é Menor')
 } else if (twoNumber < treeNumber) {
     console.log('O segundo é Menor')
