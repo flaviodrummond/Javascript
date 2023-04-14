@@ -34,3 +34,35 @@ console.log(calculator(15, 8, '+'))
 console.log(calculator(30, 10 , '-'))
 console.log(calculator(8, 5, '*'))
 console.log(calculator(10, 5, '/'))
+
+
+let calculation = (oneNumber, twoNumber, operacion) => {
+    let result
+
+    switch (operacion) {
+        case '+':
+            result = oneNumber + twoNumber
+            break;
+        case '-':
+            result = oneNumber - twoNumber
+            break;
+        case '*':
+            result = oneNumber * twoNumber
+            break;
+        case '/':
+            result = oneNumber / twoNumber
+            break;
+    
+        default:
+            result = ('Não foi possível resolver esse calculo, pois não foi encontrado a operação')
+            break;
+    }
+
+    return result
+
+}
+
+console.log(calculation(2, 3, '+'))
+console.log(calculation(3, 5, '='))
+console.log(calculation(10, 7, '*'))
+console.log(calculation(50, 5, '/'))
