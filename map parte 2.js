@@ -19,4 +19,3 @@ const toReal = numbers => `R$ ${numbers.toFixed(2)}`
 const minus = numbers => numbers - 3
 const newArray3 = number.map(double).map(minus).map(toReal)
 console.log(newArray3)
-
