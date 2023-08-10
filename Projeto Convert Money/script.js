@@ -29,4 +29,23 @@ function convertValues() {
 
 }
 
+function changeCurrency() {
+    const currencyMoney = document.querySelector(".currency-money")
+    const imageCurrency = document.querySelector(".image-currency")
+
+    if (currencySelect.value == "dolar") {
+        currencyMoney.innerHTML = "Dólar americano"
+        imageCurrency.src = './assets/Dollar.png'
+    }
+
+    if (currencySelect.value == "euro") {
+        currencyMoney.innerHTML = "Euro"
+        imageCurrency.src = './assets/Euro.png'
+    }
+
+    convertValues()
+
+}
+
+currencySelect.addEventListener("change", changeCurrency)
 convertButton.addEventListener("click", convertValues)
