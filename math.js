@@ -4,3 +4,6 @@ console.log(Math.sqrt (9,2)) // Permite calcularmos a raiz de um número
 console.log(Math.random ()) // Mostra um número aleatório de 0 a 1
 console.log(Math.ceil (22.3)) // Arredonda o número para CIMA
 console.log(Math.floor (24.6)) // Arredonda o número para BAIXO 
+
+const result = Math.pow (5,5)
+console.log(result)
