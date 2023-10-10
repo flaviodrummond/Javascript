@@ -8,5 +8,5 @@ alterandoCss.style.color = "#198"
 let button = document.querySelector(".main-button")
 
 button.style.color = "white"
-button.style.backgroundColor = "#842132"
+button.style.backgroundColor = "#462"
 button.style.fontSize = "14px"

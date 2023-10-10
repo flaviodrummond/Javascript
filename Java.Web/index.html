@@ -11,7 +11,10 @@
     <input onkeypress="digiteiNoInput()" id="main-input" placeholder="Digite aqui" name="nome completo">
     <p class="paragraph-js"> Começando nossa <b>jornada</b> para aprender </p>
     <p class="paragraph-js"> A linguagem de programação mais versátil do mundo </p>
-    <button onclick="valorNoInputPeloButton()" class="main-button"> Clique aqui </button>
+
+    <p class="valorDoInput" ></p>
+
+    <button onclick="valorNoInputPeloButton()" class="main-button"> Clique aqui</button>
 </body>
 <script src="./getElementById.js"></script>
 <script src="./getElementByClassName.js"></script>
@@ -29,6 +32,11 @@
     }
     button {
         background-color: orangered;
+        cursor: pointer;
+        border-radius: 12px;
+        padding: 8px;
+        border: none;
     }
+
 </style>
 </html>
