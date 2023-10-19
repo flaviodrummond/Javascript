@@ -2,25 +2,25 @@
 
 /* Posso ter diversas cases dentro do meu switch com os valores diferentes, mas só entra na case que for do mesmo valor. Caso, tenha um valor que não apareça em nenhuma case, posso criar uma case de default, pois assim toda vez que passar pelas cases e não encontrar o valor, ele entra na case default */
 
-const temperature = 39
+const temperature = 30
 
 switch (temperature) {
-    case 33,34,35:
+    case 33, 34, 35:
         console.log('Temperatura muito Baixa, favor procure um médico com urgência')
-    break;
-    case 36,37:
+        break;
+    case 36, 37:
         console.log('Temperatura está normal')
-    break;
-    case 38,39:
+        break;
+    case 38, 39:
         console.log('Temperatura febril, favor tome um dipirona')
-    break;
+        break;
     case 40:
         console.log('Temperatura muito Alta, favor procure um médico com urgência')
-    break;            
+        break;
 
     default:
         console.log('Nada encontrado')
-    break;
+        break;
 }
 
 const bool = true
@@ -28,8 +28,25 @@ const bool = true
 switch (bool) {
     case true:
         console.log('it is true')
-    break;
+        break;
     case false:
         console.log('it is not')
-    break;
+        break;
+}
+
+const user = "Flávio"
+
+switch (user) {
+    case "Rodolfo":
+        console.log("Não encontramos este usuário")
+        break;
+    case "Rosiane":
+        console.log("Usuário Inválido")
+        break;
+    case "Flávio Drumond":
+        console.log("Seja bem vindo")
+        break;
+    default:
+        console.log("Não encontrado")
+        break;
 }

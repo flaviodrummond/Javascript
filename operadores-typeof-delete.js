@@ -4,7 +4,13 @@
 Delete -  coloco apenas o que eu quero deletar dentro do meu objeto */
 
 const myNumber = 15
+
+console.log(typeof myNumber)
+
 const myString = "Olá Mundo"
+
+console.log(typeof myString)
+
 const myObject = {
     name: "Flavio",
     age: 38,

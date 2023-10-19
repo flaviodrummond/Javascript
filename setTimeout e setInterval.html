@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>0</h1>
+
+    <button onclick="play()">Star</button>
+    <button onclick="pare()">Stop</button>
+
+</body>
+<script>
+
+/* SetTimeout -> Executa apenas uma vez
+SetInterval -> executa infinitas vezes
+ClearInterval -> vai pausar o setInterval */
+ 
+
+let number = 0 // Criamos uma variável
+let contador // Variável vazia. Foi criada para para o setInterval, pois se tivermos vários setInterval, saberemos qual parar, pela nossa variável
+let h1 = document.querySelector("h1") // Mapeando o h1
+
+function play () { // Essa função ela pega meu número e adiciona mais um toda vez que ela é chamada e além disso ela vai lá dentro do meu h1, que foi mapeado
+   contador = setInterval(() => {
+   ++number // a cada segundo ele vai adicionando mais um.
+   h1.innerHTML = number // o innerHTML coloca o valor aqui dentro
+}, 1000); // aqui entra os milesegundos, a cada milesegundos é um segundo. Depois que der esse tempo, executa o que está dentro do setInterval
+}
+
+function pare (){
+   clearInterval(contador)
+}
+
+
+
+</script>
+</html>
