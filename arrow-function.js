@@ -43,3 +43,9 @@ console.log(`O meu segundo número é ${two}`)
 let result = sum(one,two)
 
 console.log(`O resultado deles é ${result}`)
+
+let myName = (name) => { // Tbm posso fazer dessa mesma forma que chegará ao mesmo resultado: let myName = name => aprendendo ${name}, Sem o uso do return e tambem sem o uso das chaves, isso quando for apenas um parâmetro, quando for dois ou mais, preciso colocar os parenteses.
+    return `Aprendendo ${name}`
+}
+
+console.log(myName('Javascript'))

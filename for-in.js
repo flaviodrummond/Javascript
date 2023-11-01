@@ -1,4 +1,6 @@
-/* Estrutura de Repetição - FOR IN */
+/* Estrutura de Repetição - FOR IN 
+
+Serve para interar objetos */
 
 const student =  {
     Name:"Camila",

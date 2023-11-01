@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="texto"> Meu primeiro exercício de Javascript Web</p>
+
+    <button id="click"> Altera texto </button>
+</body>
+
+<script>
+
+    // Crie uma página HTML com um botão e um parágrafo. Escreva um programa que, ao clicar no botão, altere o texto do parágrafo para "Olá, mundo!" utilizando o método getElementById.
+
+    let mudar = document.getElementById("texto")
+    const button = document.getElementById("click")
+
+    function alterar() {
+        mudar.innerHTML = "Olá Mundo !"
+    }
+
+    button.addEventListener("click", alterar)
+</script>
+
+</html>

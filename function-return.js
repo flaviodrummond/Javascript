@@ -1,4 +1,7 @@
-/* Function - Return */
+/* Function - Return
+
+Função void(vazia), não retorna nada.
+Função return, retorna um valor para quem chamou a função */
 
 function sum (number1, number2){
     let result = number1 + number2

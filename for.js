@@ -24,3 +24,11 @@ for (let index = 0; index < students.length; index++) {
     console.log(`${students[index]} está presente a aula`) // Sinal de crase para acrescentar a mensagem dentro do console.log
     
 }
+
+
+let user =  ['Flávio', 'Rosiane', 'Thiago', 'Igor', 'Elba', 'Claudio', 'Carlos', 'Januario', 'Luciele', 'Arthur', 'Wendel', 'Jaqueline']
+
+for(let i = 0; i < user.length; i++){
+    console.log(user[i])
+
+}

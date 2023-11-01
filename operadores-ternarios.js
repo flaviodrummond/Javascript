@@ -16,9 +16,9 @@ const accountExist = false // Conta de transferência tem que ser uma conta exis
 const transferOk = balance && isNotBlocked && accountExist ? 'Transferência Realizada' : 'Transferência Negada' // Se tudo for verdadeiro, a transferência será aprovada, caso contrário, será negada.
 console.log(transferOk)
 
-const clima = 38
+const clima = 37
 
- /*IF ->*/ clima < 38 &&  console.log("O clima está muito fervendo")
+ /*IF ->*/ clima > 38 &&  console.log("O clima está muito fervendo")
 
  /*IF/ELSE -> */ clima >  40 ? console.log("O clima está agradável") : console.log("O clima está esquentando")
 

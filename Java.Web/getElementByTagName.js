@@ -1,5 +1,5 @@
 /* Trás todos os elementos com essa TAG */
 
-let tagName = document.getElementsByTagName ("h1")
+let tagName = document.getElementsByTagName ("p")
 
 console.log (tagName)

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Acesse os links abaixo</h1>
+
+    <a class="link" onclick="alertLink()">Home</a>
+    <a class="link" onclick="alertLinkOne()">Contato</a>
+    <a class="link" onclick="alertLinkTwo()">Eventos</a>
+    <a class="link" onclick="alertLinkTree()">Empresa</a>
+
+    <p id="teste"></p>
+</body>
+<style>
+    a {
+        text-decoration: none;
+        padding-left: 20px;
+        font-size: 18px;
+    }
+
+    a:hover {
+        opacity: .8;
+    }
+
+    a:active {
+        color: blue;
+    }
+</style>
+
+<script>
+
+    // Crie uma página HTML com vários elementos de âncora (<a>). Escreva um programa que, ao clicar em um link, exiba um alerta com o texto do link utilizando o método getElementByTagName.
+
+    function alertLink(){
+        const alterarLink = document.getElementsByTagName("a")
+       
+        alert(alterarLink[0].innerHTML)
+    
+    }
+
+    function alertLinkOne(){
+        const alterarLink = document.getElementsByTagName("a")
+        
+        alert(alterarLink[1].innerHTML)
+    }
+
+    function alertLinkTwo(){
+        const alterarLink = document.getElementsByTagName("a")
+        
+        alert(alterarLink[2].innerHTML)
+    }
+
+    function alertLinkTree(){
+        const alterarLink = document.getElementsByTagName("a")
+        
+        alert(alterarLink[3].innerHTML)
+    }
+    
+
+</script>
+
+</html>

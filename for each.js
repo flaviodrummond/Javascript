@@ -1,4 +1,5 @@
-/* FOR EACH - É uma função e serve para percorrer os array */
+/* FOR EACH - É uma função e serve para percorrer os array, itens, index
+Não dá para usar o break */
 
 let students = [
     {name: 'Fabrício', age: 44},
