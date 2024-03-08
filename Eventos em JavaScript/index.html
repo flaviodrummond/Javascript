@@ -2,36 +2,28 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS - Devclub</title>
 </head>
 <body>
     <h1>JavaScript</h1>
+
     <input onkeypress="digiteiNoInput()" id="main-input" placeholder="Digite aqui" name="nome completo">
+
     <p class="paragraph-js"> Começando nossa <b>jornada</b> para aprender </p>
     <p class="paragraph-js"> A linguagem de programação mais versátil do mundo </p>
 
-    <p class="valorDoInput" ></p>
+    <p class="novoParagrafoVindoDoJavascript" ></p>
 
-    <button onclick=" valorNoInputPeloButton()" class="main-button"> Clique aqui</button>
+    <button onclick="newParagraph()" class="main-button"> Clique aqui</button>
 </body>
-<script src="./getElementById.js"></script>
-<script src="./getElementByClassName.js"></script>
-<script src="./getElementByTagName.js"></script>
-<script src="./getElementByName.js"></script>
-<script src="./querySelector.js"></script>
-<script src="./querySelectorAll.js"></script>
-<script src="./alterandoElementos.js"></script>
-<script src="./alterandoTexto.js"></script>
-<script src="./alterandoCss.js"></script>
-<script src="./eventos.js"></script>
 <style>
     h1 {
         color: blue;
     }
     button {
         background-color: orangered;
+        color: white;
         cursor: pointer;
         border-radius: 12px;
         padding: 8px;
@@ -39,4 +31,5 @@
     }
 
 </style>
+<script src="./script.js"></script>
 </html>
