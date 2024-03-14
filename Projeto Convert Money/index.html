@@ -10,9 +10,9 @@
     <link rel="stylesheet" href="style.css">
     <title>DevClub - Convert Money</title>
 </head>
-<body>
-    <img class="logo" src="./assets/logo.gif" alt="logo-convert-money">
 
+<body>
+    <h1>Conversor de moedas</h1>
     <main>
         <label>
             Converter <b>de</b>
@@ -55,18 +55,19 @@
             Valor
             <input class="input-currency" placeholder="R$ 10.000,00">
         </label>
-
-        <button class="convert-button"> Converter </button>
+        <div class="button">
+            <button class="convert-button"> Converter </button>
+        </div>
 
         <section>
             <div class="currency-box">
-                <img src="./assets/Real.png" alt="logo-moeda-a-converter">
+                <img src="./assets/Real.png" alt="logo-moeda-a-converter" width="40px">
                 <p class="currency">Real</p>
                 <p class="currency-value-to-convert">R$ 0,00</p>
             </div>
-            <img class="arrow" src="assets/Arrow.png" alt="seta">
+            <img class="arrow" src="./assets/arrow (1).png" alt="seta" width="40px">
             <div class="currency-box">
-                <img class="image-currency" src="./assets/Dollar.png" alt="logo-moeda-a-convertida">
+                <img class="image-currency" src="./assets/Dollar.png" alt="logo-moeda-a-convertida" width="40px">
                 <p class="currency-money">Dólar americano</p>
                 <p class="currency-value">US$ 0.0</p>
             </div>
@@ -74,4 +75,5 @@
     </main>
 </body>
 <script src="./script.js"></script>
+
 </html>

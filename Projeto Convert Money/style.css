@@ -7,39 +7,50 @@
 }
 
 body {
-    background-color:#8c54fb;
+    background-color: black;
 }
 
-.logo {
+/*.logo {
     width: 300px;
     height: 300px;
     display: block;
     margin: 20px auto;
+}*/
+h1 {
+    font-size: 40px;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px;
+    text-shadow: 0.06em 0.05em 0.12em #FFD700;
 }
 
 main {
-    width: 375px;
+    width: 600px;
     border-radius: 20px;
-    background: #F4F4F4;
+    background: black;
     margin: 0 auto 40px;
-    padding: 44px 24px 23px;
+    padding: 15px 24px 23px;
 }
 
 label {
-    color: #777777;
+    color: #ffffff;
     font-weight: 400;
     font-size: 14px;
+    margin-left: 10px;
 }
 
 select,
 input {
+    display: flex;
+    align-items: center;
     border-radius: 4px;
     border: 1px solid #BBB;
     background: #FFF;
     height: 48px;
     width: 100%;
-    margin-bottom: 24px;
-    appearance: none;
+    margin-bottom: 30px;
     font-size: 16px;
     font-weight: 700;
     color: #555;
@@ -47,10 +58,15 @@ input {
     cursor: pointer;
 }
 
+.button {
+    display: flex;
+    justify-content: center;
+}
+
 button {
     border-radius: 5px;
-    background: #772FD3;
-    width: 100%;
+    background: #f09d37;
+    width: 60%;
     height: 48px;
     color: #FFF;
     font-size: 18px;
@@ -69,12 +85,10 @@ button:active {
 
 section {
     border-radius: 20px;
-    border: 1px solid #772FD3;
-    margin: 16px 23px 24px;
+    margin: 16px auto 24px;
     padding: 12px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: space-between;
 }
 
 .currency-box {
@@ -82,21 +96,29 @@ section {
     flex-direction: column;
     align-items: center;
     gap: 4px;
+    border: 1px solid 
+    #f09d37;
+    padding: 10px 10px;
+    width: 40%;
 }
 
 .arrow {
-    margin: 15px 0;
+    height: 50px;
+    margin: auto;
+    transform: rotate(90deg);
+    
 }
 
 .currency, .currency-money {
-    color: #777;
+    color: #fff;
     font-size: 14px;
     font-weight: 400;
     line-height: 18px;
 }
 
 .currency-value, .currency-value-to-convert {
-    color: #555;
+    color: 
+    #f09d31;
     font-size: 20px;
     font-weight: 700;
     line-height: 18px;
