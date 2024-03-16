@@ -1,4 +1,18 @@
 const convertButton = document.querySelector('.convert-button')
+
+function convertValues(){
+    const inputCurrencyValue = document.querySelector('.input-currency').value
+    
+    const dollarToday = 4.98
+    
+    const convertedValue = inputCurrencyValue / dollarToday
+
+    console.log(convertedValue)
+}
+
+convertButton.addEventListener("click", convertValues)
+
+/*const convertButton = document.querySelector('.convert-button')
 const currencySelect = document.querySelector(".currency-select-to-convert")
 
 function convertValues() {
@@ -71,4 +85,4 @@ function changeCurrency() {
 }
 
 currencySelect.addEventListener("change", changeCurrency)
-convertButton.addEventListener("click", convertValues)
+convertButton.addEventListener("click", convertValues)*/
