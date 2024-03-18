@@ -1,34 +1,34 @@
 const convertButton = document.querySelector('.convert-button')
 const selectToConverted = document.querySelector('.currency-select-to-converted')
 
-function convertValues(){
+function convertValues() {
 
     const inputCurrencyValue = document.querySelector('.input-currency').value
 
     const currencyValueToConvert = document.querySelector('.currency-value-to-convert')
 
     const currencyValueToConverted = document.querySelector('.currency-value')
-    
-    
+
+
     const dollarToday = 4.98
     const euroToday = 5.45
     const libraToday = 6.38
     const bitcoinToday = 339018.37
-    
 
-    if(selectToConverted.value == "dolar") {
+
+    if (selectToConverted.value == "dolar") {
         currencyValueToConverted.innerHTML = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(inputCurrencyValue / dollarToday);
-    } 
-    
-    if(selectToConverted.value == "euro") {
+    }
+
+    if (selectToConverted.value == "euro") {
         currencyValueToConverted.innerHTML = new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'EUR' }).format(inputCurrencyValue / euroToday);
     }
 
-    if(selectToConverted.value == "libra") {
+    if (selectToConverted.value == "libra") {
         currencyValueToConverted.innerHTML = new Intl.NumberFormat('en-GB', { style: 'currency', currency: 'GBP' }).format(inputCurrencyValue / libraToday);
     }
 
-    if(selectToConverted.value == "bitcoin") {
+    if (selectToConverted.value == "bitcoin") {
         currencyValueToConverted.innerHTML = new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'BTC' }).format(inputCurrencyValue / bitcoinToday);
     }
 
@@ -36,6 +36,34 @@ function convertValues(){
 
 }
 
+function changeCurrency() {
+    const currencyMoney = document.querySelector('.currency-money')
+    const currencyImageConverted = document.querySelector('.image-currency-to-converted')
+
+    if (selectToConverted.valu == "dolar") {
+        currencyMoney.innerHTML = "Dólar americano"
+        currencyImageConverted.src = './assets/Dollar.png'
+    }
+
+    if (selectToConverted.value == "euro") {
+        currencyMoney.innerHTML = "Euro"
+        currencyImageConverted.src = './assets/Euro.png'
+    }
+    
+    if (selectToConverted.value == "libra") {
+        currencyMoney.innerHTML = "Libra"
+    }
+
+    if (selectToConverted.value == "bitcoin") {
+        currencyMoney.innerHTML = "Bitcoin"
+    }
+
+    convertValues()
+}
+
+
+
+selectToConverted.addEventListener("change", changeCurrency)
 convertButton.addEventListener("click", convertValues)
 
 /*const convertButton = document.querySelector('.convert-button')
