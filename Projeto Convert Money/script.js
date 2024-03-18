@@ -1,4 +1,5 @@
 const convertButton = document.querySelector('.convert-button')
+const selectToConverted = document.querySelector('.currency-select-to-converted')
 
 function convertValues(){
 
@@ -8,13 +9,30 @@ function convertValues(){
 
     const currencyValueToConverted = document.querySelector('.currency-value')
     
-    const dollarToday = 4.98
     
-    const convertedValue = inputCurrencyValue / dollarToday
+    const dollarToday = 4.98
+    const euroToday = 5.45
+    const libraToday = 6.38
+    const bitcoinToday = 339018.37
+    
+
+    if(selectToConverted.value == "dolar") {
+        currencyValueToConverted.innerHTML = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(inputCurrencyValue / dollarToday);
+    } 
+    
+    if(selectToConverted.value == "euro") {
+        currencyValueToConverted.innerHTML = new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'EUR' }).format(inputCurrencyValue / euroToday);
+    }
+
+    if(selectToConverted.value == "libra") {
+        currencyValueToConverted.innerHTML = new Intl.NumberFormat('en-GB', { style: 'currency', currency: 'GBP' }).format(inputCurrencyValue / libraToday);
+    }
+
+    if(selectToConverted.value == "bitcoin") {
+        currencyValueToConverted.innerHTML = new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'BTC' }).format(inputCurrencyValue / bitcoinToday);
+    }
 
     currencyValueToConvert.innerHTML = new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(inputCurrencyValue);
-
-    currencyValueToConverted.innerHTML = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(convertedValue);
 
 }
 
