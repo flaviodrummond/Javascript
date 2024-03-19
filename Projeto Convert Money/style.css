@@ -116,10 +116,20 @@ section {
     line-height: 18px;
 }
 
-.currency-value, .currency-value-to-convert {
+.currency-value-to-convert, .currency-value-to-converted {
+    text-align: center;
     color: 
     #f09d31;
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+}
+
+.currency-value-convert, .currency-value-converted {
+    text-align: center;
+    color: 
+    #f09d31;
+    font-size: 14px;
     font-weight: 700;
     line-height: 18px;
 }
