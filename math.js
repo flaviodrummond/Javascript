@@ -1,6 +1,6 @@
 /* Math - Matemática */
 
-console.log(Math.PI * 2) // Mostra valor de PI
+console.log(Math.PI) // Mostra valor de PI
 console.log(Math.pow (4,3)) // Permite usar a potenciação
 console.log(Math.sqrt (9,2)) // Permite calcularmos a raiz de um número
 console.log(Math.random ()) // Mostra um número aleatório de 0 a 1

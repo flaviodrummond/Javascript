@@ -9,7 +9,7 @@ select.addEventListener('change', function(){
     console.log('troquei de valor')
 })
 
-// Sempre que acontece um evento, chega várias informações e para sabermos essa informação, ela sempre chega dentro da nossa função, por isso colocamos o event dentro de nossos parenteses.
+// Sempre que acontece um evento, chega várias informações e para sabermos essa informação, ela sempre chega dentro da nossa função, por isso colocamos o event dentro de nossos parenteses. 
 function troqueiDeValor(event){
     console.log(event)
 }
