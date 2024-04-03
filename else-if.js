@@ -16,13 +16,16 @@ if(temperature >= 36 && temperature <=39) { // Se a condicional for verdadeira, 
 }
 
 
-const clima = 40
-if(clima >= 28 && clima <=32) {
-    console.log("O clima está agradável")
-}else if (clima > 33 && clima <= 39){
-    console.log("O clima está esquentando")
-} else if (clima > 39){
-    console.log("O clima está muito fervendo")
+let clima = 41
+
+if(clima >= 25 && clima <= 32) {
+    console.log("Clima está agradável")
+} else if (clima >= 33 && clima <= 37) {
+    console.log("Clima começou a esquentar")
+} else if (clima >= 38 && clima <= 40) {
+    console.log("Clima Quente")
+} else if(clima > 40) {
+    console.log("Clima MUITO quente")
 } else {
-    console.log("O clima está muito agradável")
+    console.log("Clima com RISCO de hipotermia")
 }
