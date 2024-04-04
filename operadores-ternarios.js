@@ -24,3 +24,6 @@ const clima = 37
 
 /* Else/If -> */clima >= 28 && clima <=32 ? console.log("O clima está agradável") : clima >= 33 && clima <= 39 ? console.log("O clima está esquentando") :  console.log("O clima está muito fervendo")
 
+let salary = 14000
+
+salary < 5000 ? console.log("Colaborador é dev júnior") : salary >= 5000 && salary < 10000 ? console.log("Colaborador é dev pleno") : salary >= 10000 && salary < 15000 ? console.log("Colaborador é dev senior") : console.log("É o direto da empresa")
