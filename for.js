@@ -19,7 +19,7 @@ for (let index = 0; index <= 10; index++) {
 
 const students = ['Ana', 'Pedro', 'Flávio', 'Gustavo', 'Rosiane', 'Ketlyn']
 
-for (let index = 0; index < students.length; index++) {
+for (let index = 0; index < students.length; index++) { // o length vai me mostrar o tamanho do meu array
 
     console.log(`${students[index]} está presente a aula`) // Sinal de crase para acrescentar a mensagem dentro do console.log
     
@@ -31,4 +31,9 @@ let user =  ['Flávio', 'Rosiane', 'Thiago', 'Igor', 'Elba', 'Claudio', 'Carlos'
 for(let i = 0; i < user.length; i++){
     console.log(user[i])
 
+}
+
+const contact = ['Gustavo', 'Ketlyn', 'Rosiane', 'Fabrício', 'Edir', 'Rosimar', 'Valdecir']
+for(let i = 0; i < contact.length; i++){
+    console.log(`${contact[i]} é da minha família`)
 }
