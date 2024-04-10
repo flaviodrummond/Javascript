@@ -1,5 +1,5 @@
 let input = document.querySelector("input")
-let paragraph = document.querySelector("h2")
+let paragraph = document.querySelector("p")
 let search = document.querySelector(".button")
 
 let contact = [{name:"Flávio Drumond", number:"(27) 98112-2334"},
@@ -11,7 +11,7 @@ let contact = [{name:"Flávio Drumond", number:"(27) 98112-2334"},
 function meet () {
     for(let i = 0; i < contact.length; i++){
         if(input.value.toLowerCase() === contact[i].name.toLowerCase()){
-            paragraph.innerHTML = ` Nome: ${contact[i].name} Telefone: ${contact[i].number}`
+            paragraph.innerHTML = `Nome: ${contact[i].name} Telefone: ${contact[i].number}`
 
             break
         } else {
