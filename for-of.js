@@ -10,3 +10,9 @@ let allNames = ['Carla', 'Joneir', 'Carlos', 'Pedro']
 for (let name of allNames){ // A vantagem do FOR OF é não avisar quando ele vai parar, pois ele vai executando enquanto tiver array ou string, quando terminar, ele sabe que tem que parar
     console.log(name)
 }
+
+const users = ['Flávio', 'Rosiane', 'Ketlyn', 'Gustavo']
+
+for (const user of users) {
+    console.log(user)
+}
