@@ -9,16 +9,19 @@ let contact = [{ name: "Flávio Drumond", number: "(27) 98112-2334" },
 
 function onclick() {
     let i = 0;
-while (i < contact.length) {
+    while (i < contact.length) {
 
-    if(input.value.toLowerCase() === contact[i].name.toLowerCase()) {
-        h2.innerHTML = `Nome: ${contact[i].name}, Telefone: ${contact[i].number}`
-        break
-    } else {
-        h2.innerHTML = `Contato não encontrado` 
+        if(input.value.toLocaleLowerCase() === contact[i].name.toLocaleLowerCase()) {
+            h2.innerHTML = `Nome: ${contact[i].name}, number: ${contact[i].number}`
+
+            break
+        } else {
+            h2. innerHTML = 'Contato não encontrado, favor verificar novamente o contato digitado'
+        }
+
+        i++;
+        
     }
+}
 
-    i++;
-}
-}
 button.addEventListener("click", onclick)
