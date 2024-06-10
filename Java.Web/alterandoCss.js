@@ -3,7 +3,7 @@
 let h1 = document.querySelector("h1")
 
 h1.style.fontSize = "50px"
-h1.style.color = "#198"
+h1.style.color = "#346685"
 
 let button = document.querySelector(".main-button")
 
@@ -14,3 +14,4 @@ button.style.fontSize = "14px"
 let p = document.querySelector("p")
 
 p.style.fontSize = "20px"
+p.style.color = "#2596be"
